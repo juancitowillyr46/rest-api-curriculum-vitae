@@ -3,20 +3,23 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "start": "node --exec babel-node ./bin/www",
-        "debug": "nodemon --exec babel-node --inspect ./bin/www"
+        "start": "node --exec babel-node ./src/bin/www",
+        "debug": "nodemon --exec babel-node --inspect ./src/bin/www"
     },
     "dependencies": {
+        "@hapi/joi": "^15.0.3",
         "body-parser": "^1.19.0",
         "cookie-parser": "~1.4.4",
         "debug": "~2.6.9",
         "express": "~4.16.1",
+        "express-validator": "^5.3.1",
         "http-errors": "~1.6.3",
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^5.5.14",
         "morgan": "~1.9.1",
         "npm-run-all": "^4.1.5",
-        "pug": "2.0.0-beta11"
+        "pug": "^2.0.4",
+        "request-validation": "^0.1.2-0"
     },
     "devDependencies": {
         "@babel/cli": "^7.4.4",
