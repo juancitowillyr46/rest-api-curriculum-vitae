@@ -15,10 +15,5 @@ router.post('/register', [
     check('verifyPassword').exists().isLength({ min: 8, max: 10 })
 ], userController.postRegister);
 
-router.get('/users', (req, res, next) => {
-    var test = 'ddd';
-    console.log(test);
-    res.send('respond with a resource');
-});
 
 module.exports = router;
